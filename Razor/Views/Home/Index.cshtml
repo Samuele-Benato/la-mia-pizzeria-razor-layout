@@ -1,7 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    // ex 1
     string myname = "Samuele";
     string mysurname = "Benato";
+
+    //ex 2
+    int numberssum(int n)
+    {
+        int sum = 0;
+        for(int i = 0; i <= n; i++)
+        {
+            sum += i;
+        }
+        return sum;
+    }
+
+    //ex 3
 }
 <html lang="en">
 <head>
@@ -12,7 +26,8 @@
 </head>
 <body>
     <div class="container">
-        <h2>@myname @mysurname</h2>
+        <h2>1. @myname @mysurname</h2>
+        <span>2. @numberssum(3)</span>
     </div>
     <style>
   
@@ -21,8 +36,6 @@
 </body>
 </html>
 
-2. Creare una funzione che stampa la somma dei numeri che vanno da 1 a n (con n passato come parametro - n incluso)
-Stampare dentro uno span il risultato.
 3. Contare quante volte la lettera a è presente nalla frase "nel mezzo del cammin di nostra vita" e stampare questo valore in pagina
 4. Creare una List<int>
 di 20 numeri interi (generati random da 1 a 90, 1 e 90 inclusi) e mostrare in pagina solo i numeri compresi tra 20 e 70
