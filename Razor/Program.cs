@@ -1,4 +1,4 @@
-namespace la_mia_pizzeria_razor_layout
+namespace Razor
 {
     public class Program
     {

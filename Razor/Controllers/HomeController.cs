@@ -1,8 +1,8 @@
-﻿using la_mia_pizzeria_razor_layout.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Razor.Models;
 using System.Diagnostics;
 
-namespace la_mia_pizzeria_razor_layout.Controllers
+namespace Razor.Controllers
 {
     public class HomeController : Controller
     {
