@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
     // ex 1
     string myname = "Samuele";
     string mysurname = "Benato";
@@ -31,6 +32,23 @@
         return count;
     }
 
+    //ex 4
+    List<int> numbers = new List<int>();
+    List<int> Numbers()
+    {
+        for(int i = 0; i <= 20; i++)
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(1, 91);
+            if(randomNumber >= 20 && randomNumber <= 70)
+            {
+                numbers.Add(randomNumber);
+            }
+        }
+        return numbers;
+    }
+    numbers = Numbers();
+
 }
 <html lang="en">
 <head>
@@ -44,6 +62,16 @@
         <h2>1. @myname @mysurname</h2>
         <div>2. @Numberssum(3)</div>
         <div>3. nella frase "nel mezzo del cammin di nostra vita" ci sono @count "a"</div>
+        <div>
+            4. Lista numeri :
+            <ol>
+                @foreach (int num in numbers)
+                {
+                    <li> numero :@num</li>
+                }
+            </ol>
+        </div>
+        
     </div>
     <style>
   
