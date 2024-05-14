@@ -60,10 +60,10 @@
 <body>
     <div class="container">
         <h2>1. @myname @mysurname</h2>
-        <div>2. @Numberssum(3)</div>
-        <div>3. nella frase "nel mezzo del cammin di nostra vita" ci sono @count "a"</div>
-        <div>
-            4. Lista numeri :
+        <div class="pt-2"><strong>2.</strong> @Numberssum(3)</div>
+        <div class="pt-2"><strong>3.</strong> nella frase "nel mezzo del cammin di nostra vita" ci sono @count "a"</div>
+        <div class="pt-2">
+            <strong>4. Lista numeri :</strong>
             <ol>
                 @foreach (int num in numbers)
                 {
@@ -71,7 +71,13 @@
                 }
             </ol>
         </div>
-        <div>5. @DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")</div>
+        <div><strong>5.</strong> @DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")</div>
+        <div class="pt-2">
+            <strong>6.</strong>
+            <p>a. Data di 7 giorni fa: @DateTime.Now.AddDays(-7).ToString("yyyy-MM-dd")</p>
+            <p>b. Oggi è : @DateTime.Now.ToString("dddd")</p>
+            <p>c. Tra un anno oggi sarà : @DateTime.Now.AddYears(1).ToString("dddd")</p>
+        </div>
     </div>
     <style>
   
@@ -79,8 +85,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-
-6. Partendo dalla data di oggi (usando la classe DateTime) stampare in pagina
-a. la data di 7 giorni fa
-b. che giorno della settimana è oggi (il risultato dovrà  essere il nome del giorno (Lunedì, Martedì, ...)
-c. che giorno della settimana sarà  nello stesso giorno e mese di oggi ma tra un anno (il risultato dovrÃ  essere il nome del giorno (Lunedì, Martedì, ...)
