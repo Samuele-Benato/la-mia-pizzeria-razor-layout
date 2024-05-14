@@ -1,6 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-    Layout = null;
+    Layout = "_MyLayout";
 
     Pizzeria mypizzeria = new Pizzeria("Pizzeria da Samu");
 }
@@ -13,7 +13,8 @@
 </head>
     <body>
         <div class="container">
-            <h1 class="pt-4 pb-4 text-center">@mypizzeria.Name</h1>
+        <div class="d-flex justify-content-center"><img src="~/img/Da Samu.png" /></div>
+            
             <div class="row">
                 @foreach (var pizza in mypizzeria.pizzas)
                 {

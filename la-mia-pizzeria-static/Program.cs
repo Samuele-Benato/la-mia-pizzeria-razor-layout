@@ -1,10 +1,16 @@
+using Microsoft.AspNetCore.Hosting;
+
 namespace la_mia_pizzeria_static
 {
     public class Program
     {
         public static void Main(string[] args)
         {
+
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddRazorPages()
+               .AddRazorRuntimeCompilation();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
@@ -32,5 +38,6 @@ namespace la_mia_pizzeria_static
 
             app.Run();
         }
+       
     }
 }
